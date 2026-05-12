@@ -1,0 +1,16 @@
+{
+  "name": "team-task-manager",
+  "version": "1.0.0",
+  "description": "Full-stack Team Task Manager with role-based access control",
+  "scripts": {
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm install && npm run build && cd ../server && npm install",
+    "start": "cd server && node index.js"
+  },
+  "dependencies": {
+    "http-node": "^1.2.0",
+    "isomorphic-git": "^1.37.6"
+  }
+}
