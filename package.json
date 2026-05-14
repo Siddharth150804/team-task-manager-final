@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "Full-stack Team Task Manager with role-based access control",
   "scripts": {
-    "dev:server": "cd server && npm run dev",
-    "dev:client": "cd client && npm run dev",
-    "install:all": "cd server && npm install && cd ../client && npm install",
-    "build": "cd client && npm install && npm run build && cd ../server && npm install",
-    "start": "cd server && node index.js"
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm --prefix client install && npm --prefix client run build && npm --prefix server install",
+    "start": "npm --prefix server start"
   },
   "dependencies": {
     "http-node": "^1.2.0",
